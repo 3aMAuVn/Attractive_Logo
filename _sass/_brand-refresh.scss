@@ -393,3 +393,41 @@ body:not(.page-demo):not([class*="page-demo-"]) .page-hero.page-hero--banner p {
 @media (prefers-reduced-motion: reduce) {
   .form-hero-banner::before { animation: none !important; }
 }
+
+/* Magic Math Master: Start Free in the global navigation and homepage hero. */
+.premium-topbar .premium-nav a.nav-start-free {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 9px 15px; border-radius: 999px;
+  background: linear-gradient(135deg, #0874e8 0%, #0755b9 100%);
+  border: 1px solid #0752ac; color: #fff !important;
+  font-weight: 900; white-space: nowrap;
+  box-shadow: 0 3px 9px rgba(5, 75, 160, .18);
+  text-decoration: none;
+}
+.premium-topbar .premium-nav a.nav-start-free:hover,
+.premium-topbar .premium-nav a.nav-start-free:focus-visible {
+  background: linear-gradient(135deg, #0965ce 0%, #063e90 100%);
+  color: #fff !important;
+  box-shadow: 0 5px 15px rgba(5, 75, 160, .28);
+}
+.premium-topbar .premium-nav a.nav-start-free:focus-visible,
+.hero-snap-cta a.btn-start-free:focus-visible {
+  outline: 3px solid #ffcf50; outline-offset: 3px;
+}
+body:not(.page-demo):not([class*="page-demo-"]) .hero.hero--with-banner .hero-snap-cta a.btn-start-free {
+  background: linear-gradient(135deg, #1684fa 0%, #0754bb 100%) !important;
+  border: 2px solid #8bc8ff !important;
+  color: #fff !important; font-weight: 900 !important;
+  text-shadow: none !important;
+  box-shadow: 0 8px 24px rgba(0, 65, 150, .40), inset 0 1px 0 rgba(255,255,255,.25) !important;
+  opacity: 1 !important;
+}
+body:not(.page-demo):not([class*="page-demo-"]) .hero.hero--with-banner .hero-snap-cta a.btn-start-free:hover {
+  background: linear-gradient(135deg, #086cde 0%, #053c90 100%) !important;
+  transform: translateY(-2px);
+}
+@media (min-width: 821px) and (max-width: 1500px) {
+  .premium-topbar .premium-nav { gap: 5px; }
+  .premium-topbar .premium-nav a { padding: 8px 10px; }
+  .premium-topbar .premium-nav a.nav-start-free { padding: 8px 11px; }
+}

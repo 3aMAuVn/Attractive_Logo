@@ -24,6 +24,7 @@
         {% for item in site.data.navigation[nav_key] %}
           <a href="{{ item.url | relative_url }}" class="{% if item.cta %}nav-cta{% endif %}" data-nav>{{ item.title }}</a>
         {% endfor %}
+        <a href="https://practice.magicmathmaster.com.au/" class="nav-start-free" aria-label="{% if is_vi %}Luyện tập toán miễn phí{% elsif is_zh %}免费数学练习{% else %}Start free maths practice{% endif %}">{% if is_vi %}Bắt đầu miễn phí{% elsif is_zh %}免费开始{% else %}Start Free{% endif %}</a>
         <a href="{{ site.data.site.student_login }}" class="nav-login">{% if is_vi %}{{ site.data.site.student_login_label_vi }}{% elsif is_zh %}{{ site.data.site.student_login_label_zh }}{% else %}{{ site.data.site.student_login_label | default: 'Student login' }}{% endif %}</a>
       </nav>
 
