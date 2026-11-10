@@ -1,5 +1,5 @@
 // Versioned PWA cache. Online pages are network-first so installed apps update with GitHub Pages.
-const CACHE_NAME = "magic-math-master-20261110-new-logo-v2";
+const CACHE_NAME = "magic-math-master-20261110-start-free-v3";
 const APP_SHELL = ["/", "/index.html", "/manifest.json", "/assets/logo.png", "/assets/icon-192.png", "/assets/icon-512.png"];
 self.addEventListener("install", event => {
   self.skipWaiting();
