@@ -10371,3 +10371,19 @@ body.page-index .hero.hero-with-banner
   background: #f0a000 !important;
   color: #ffffff !important;
 }
+
+/* Gold Start Free button - Magic Math Master */
+body.page-index .hero-snap-cta a.btn-start-free {
+    background: #f5b52a !important;
+    background-image: none !important;
+    color: #ffffff !important;
+    border: 2px solid #ffd66b !important;
+    font-weight: 900 !important;
+    opacity: 1 !important;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25) !important;
+}
+
+body.page-index .hero-snap-cta a.btn-start-free:hover {
+    background: #f0a000 !important;
+    color: #ffffff !important;
+}
