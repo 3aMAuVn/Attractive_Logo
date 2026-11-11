@@ -431,3 +431,19 @@ body:not(.page-demo):not([class*="page-demo-"]) .hero.hero--with-banner .hero-sn
   .premium-topbar .premium-nav a { padding: 8px 10px; }
   .premium-topbar .premium-nav a.nav-start-free { padding: 8px 11px; }
 }
+/* Make the homepage hero Start Free button visible */
+body:not(.page-demo) .hero.hero-with-banner
+.hero-snap-cta a.btn-start-free {
+  background: linear-gradient(135deg, #f5b52a, #e18a00) !important;
+  color: #ffffff !important;
+  border: 2px solid #ffd66b !important;
+  font-weight: 900 !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25) !important;
+  opacity: 1 !important;
+}
+
+body:not(.page-demo) .hero.hero-with-banner
+.hero-snap-cta a.btn-start-free:hover {
+  background: #f0a000 !important;
+  color: #ffffff !important;
+}
