@@ -447,3 +447,59 @@ body:not(.page-demo) .hero.hero-with-banner
   background: #f0a000 !important;
   color: #ffffff !important;
 }
+/* === MMM iPad Safari / tablet responsive layout fix (2026-11-13) === */
+@media (min-width: 621px) and (max-width: 1100px) {
+  .premium-topbar { height: auto !important; overflow: visible !important; }
+  .premium-topbar .topbar-inner,
+  .topbar .container.topbar-inner {
+    height: auto !important;
+    max-height: none !important;
+    min-height: 0 !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    padding-top: 10px !important;
+    padding-bottom: 12px !important;
+    row-gap: 10px !important;
+  }
+  .premium-topbar .nav-wrap, .nav-wrap {
+    flex: 1 1 100% !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+  }
+  .premium-topbar .premium-nav {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    gap: 8px !important;
+    overflow: visible !important;
+    width: auto !important;
+    max-width: 100% !important;
+  }
+  .premium-topbar .premium-nav a {
+    font-size: 14px !important;
+    line-height: 1.2 !important;
+    padding: 8px 11px !important;
+    white-space: nowrap !important;
+  }
+  .hero-snap-checks { column-gap: 20px !important; row-gap: 12px !important; }
+  .hero-snap-checks span { display: inline-flex !important; align-items: center; }
+  .hero-snap-pills { gap: 14px !important; }
+  .hero-snap-pill { min-width: 0; box-sizing: border-box; }
+  .hero-snap-cta { gap: 12px !important; }
+}
+@media (max-width: 620px) {
+  .premium-topbar { height: auto !important; overflow: visible !important; }
+  .premium-topbar .topbar-inner { height: auto !important; max-height: none !important; }
+  .premium-topbar .nav-wrap { flex: 1 1 100% !important; width: 100% !important; }
+  .premium-topbar .premium-nav { display: flex !important; flex-wrap: wrap !important; gap: 7px !important; overflow: visible !important; }
+  .premium-topbar .premium-nav a { font-size: 13px !important; padding: 7px 9px !important; }
+  .hero-snap-checks { gap: 12px !important; }
+  .hero-snap-pills { gap: 12px !important; }
+  .hero-snap-cta { gap: 12px !important; }
+}
